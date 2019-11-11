@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Loan Calculator</title>
+</head>
+
+
+<body>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <ul class="nav">
+
+                <li class="nav-item pr-5">
+                    <a href="#">Buy</a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a href="#">Sell</a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a href="#">Loan</a>
+                </li>
+                <li class="nav-item pr-5">
+                    <a href="3">About</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </div>
+<div>
+    <fieldset>
+            <!--<legend>Feedback</legend>-->
+            <form>
+                    <label for="lamt">Loan Amount:</label>
+                    <input type="text" id="amt" placeholder="xxxx" > <span>$</span>
+                    <br>
+                    <label for="intrte">Interest Rate:</label>
+                    <input type="text" id="rate" placeholder="xxxx"> <span>%</span>
+                    <br>
+                    <label for="lnTrm">Loan Term:</label>
+                    <input type="text" id="term" placeholder="xxxx" > <span>Years</span>
+                    <br>
+                    <label for="lamt">Start Year:</label>
+                    <select name="year" id="year">
+                        <option value="2019" id="2019">2019</option>
+                        <option value="2020" id="2020">2020</option>
+                        <option value="2021" id="2021">2021</option>
+                        <option value="2022" id="2022">2022</option>
+                        <option value="2023" id="2023">2023</option>
+                        <option value="2024" id="2024">2024</option>
+                        <option value="2025" id="2025">2025</option>
+                        <option value="2026" id="2026">2026</option>
+                        <option value="2027" id="2027">2027</option>
+                        <option value="2028" id="2028">2028</option>
+                        <option value="2029" id="2029">2029</option>
+                        <option value="2030" id="2030">2030</option>
+                    </select>
+                    <br>
+                    <button id="button" onclick="calculate()">Calculate</button>
+                    <br>
+                
+                    <input type="text" placeholder="Result" id="result">
+           </form>
+
+    </fieldset>
+</div>
+
+    <script>
+
+        //Add the action
+        //document.getElementById('button').addEventListener('click', calculate);
+
+    
+        function calculate() {
+
+            var amount = parseFloat(document.getElementById('amt')).value;
+            var interest = parseFloat(document.getElementById('rate')).value;
+            var annual = parseFloat(document.getElementById('lntrm')).value;
+            var result = document.getElementById('result');
+
+            result.value = amount;
+
+        }
+    
+    </script>
+</body>
+</html>

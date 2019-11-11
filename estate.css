@@ -1,0 +1,42 @@
+
+
+#loanclaculator{
+    width: 5500px;
+    height: 500px;
+    margin-right: 200px;
+    padding: 10px;
+    
+}
+fieldset {
+    display: inline;
+    margin-left: 30em;
+    margin-top: 15em;
+}
+
+#output{
+    position: absolute;
+    
+    margin-left: 10em;
+    margin-top: 5em;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 200;
+    font-family:  Didot, "Didot LT STD", "Hoefler Text", Garamond,
+     "Times New Roman", serif;
+    
+}
+ul{
+    text-align: center;
+}
+
+li {
+    top: 0;
+    float: left;
+    display: inline-block;
+    padding-right: 3em;
+    border: 1px solid rgb(100, 99, 99);
+    background-color: rgb(0, 119, 255);
+}
+
